@@ -28,7 +28,7 @@ class Calculator extends Actor {
   }
 
 
-  def getAvg(list: List[Int], sum: Int = 0, count: Int = 0): Double = {
+  @tailrec private[this] def getAvg(list: List[Int], sum: Int = 0, count: Int = 0): Double = {
     if (list.isEmpty) {
       if (count == 0)
         0
