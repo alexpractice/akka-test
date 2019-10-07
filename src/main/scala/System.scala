@@ -1,5 +1,5 @@
 import akka.actor._
-
+import scala.annotation.tailrec
 import scala.util.Random
 
 case class InputMsg(list: List[Int])
